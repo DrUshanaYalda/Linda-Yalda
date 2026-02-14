@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🌙 زرّ الراحة للظهر — لندا يلده</title>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#121a24;
+      --text:#f2f5f7;
+      --muted:#b9c2cc;
+      --accent:#7dd3fc;
+      --line:rgba(255,255,255,0.10);
+      --ok:rgba(34,197,94,0.18);
+      --warn:rgba(251,191,36,0.14);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, "Noto Kufi Arabic", "Noto Naskh Arabic", sans-serif;
+    }
+    .wrap{
+      height:100svh;
+      overflow-y:auto;
+      scroll-snap-type: y mandatory;
+      scroll-behavior:smooth;
+    }
+    .section{
+      min-height:100svh;
+      scroll-snap-align:start;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px 18px;
+    }
+    .card{
+      width:min(780px, 100%);
+      background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    .title{
+      font-size:30px;
+      line-height:1.2;
+      margin:0 0 6px;
+      letter-spacing:0.2px;
+    }
+    .subtitle{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size:18px;
+      line-height:1.6;
+    }
+    .namechip{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius:999px;
+      background:rgba(125,211,252,0.10);
+      border:1px solid rgba(125,211,252,0.22);
+      margin:10px 0 0;
+      font-size:18px;
+    }
+    .h{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      font-size:24px;
+      margin:0 0 10px;
+      flex-wrap:wrap;
+    }
+    .h .badge{
+      font-size:18px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(125,211,252,0.12);
+      border:1px solid rgba(125,211,252,0.25);
+      color:var(--accent);
+      white-space:nowrap;
+    }
+    .p{
+      font-size:20px;
+      line-height:1.75;
+      margin:0 0 10px;
+    }
+    .list{
+      margin:10px 0 0;
+      padding:0;
+      list-style:none;
+    }
+    .list li{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      padding:10px 0;
+      border-top:1px solid var(--line);
+      font-size:20px;
+      line-height:1.7;
+    }
+    .list li:first-child{border-top:none}
+    .mark{
+      width:28px;
+      flex:0 0 28px;
+      text-align:center;
+      font-weight:700;
+    }
+    .muted{color:var(--muted)}
+    .okbox{
+      margin-top:12px;
+      padding:12px 12px;
+      border-radius:16px;
+      background:var(--ok);
+      border:1px solid rgba(34,197,94,0.30);
+      font-size:18px;
+      line-height:1.7;
+    }
+    .warnbox{
+      margin-top:12px;
+      padding:12px 12px;
+      border-radius:16px;
+      background:var(--warn);
+      border:1px solid rgba(251,191,36,0.25);
+      font-size:18px;
+      line-height:1.7;
+    }
+    .arrow{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:18px;
+      text-align:center;
+    }
+    .tiny{
+      font-size:16px;
+      color:var(--muted);
+      margin-top:14px;
+      line-height:1.6;
+    }
+    .wrap::-webkit-scrollbar{width:0;height:0}
+    .wrap{scrollbar-width:none}
+    .hint{
+      position:fixed;
+      left:16px;
+      bottom:16px;
+      right:16px;
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      pointer-events:none;
+      opacity:0.85;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .hint span{
+      background:rgba(0,0,0,0.35);
+      border:1px solid var(--line);
+      padding:8px 10px;
+      border-radius:999px;
+      backdrop-filter: blur(6px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- COVER -->
+    <section class="section">
+      <div class="card">
+        <h1 class="title">🌙 زرّ الراحة للظهر</h1>
+        <p class="subtitle">عند بداية الألم… افعلي هذا فوراً.<br>كل صفحة فكرة وحدها — اسحبي لتحت.</p>
+
+        <div class="namechip">👤 هذا مخصّص لـ: <b> أتو لندا</b></div>
+
+        <ul class="list" style="margin-top:14px;">
+          <li><div class="mark">✔</div><div>حركة سريعة… تريح الجسم خلال دقائق</div></li>
+          <li><div class="mark">🌿</div><div>ما تحتاجين تسوينها “بشكل مثالي”</div></li>
+          <li><div class="mark">⏱</div><div>مدة قصيرة — بس حتى يهدأ الألم</div></li>
+        </ul>
+
+        <div class="arrow">⬇ اسحبي لتحت</div>
+      </div>
+    </section>
+
+    <!-- STEP 1: WALL -->
+    <section class="section">
+      <div class="card">
+        <div class="h"><span class="badge">📍 الجدار</span><span>الخطوة ١</span></div>
+
+        <p class="p">قفي ملاصقة للجدار:</p>
+
+        <ul class="list">
+          <li><div class="mark">✔</div><div>الرأس يلمس الجدار</div></li>
+          <li><div class="mark">✔</div><div>الكتفين يلمسون الجدار</div></li>
+          <li><div class="mark">✔</div><div>الحوض يلمس الجدار</div></li>
+          <li><div class="mark">✔</div><div>الذقن للداخل قليلاً</div></li>
+        </ul>
+
+        <p class="p muted">➜ هذا يعيد الاستقامة ويخفف الضغط عن العصب الموجوع.</p>
+
+        <div class="arrow">⬇ التالي</div>
+      </div>
+    </section>
+
+    <!-- STEP 2: PERIPHERAL VISION -->
+    <section class="section">
+      <div class="card">
+        <div class="h"><span class="badge">👀 النظر</span><span>الخطوة ٢</span></div>
+
+        <ul class="list">
+          <li><div class="mark">✔</div><div>انظري للأمام (ركّزي على نقطة بسيطة قدّامج)</div></li>
+          <li><div class="mark">⬇</div><div>وسّعي مجال رؤيتچ لليمين واليسار<br><span class="muted">(بدون تحريك الرأس أو العين… فقط انتباه)</span></div></li>
+        </ul>
+
+        <div class="okbox">
+          ✨ كلما اتسع مجال الرؤية… يهدأ الجسم تلقائياً.
+        </div>
+
+        <div class="warnbox">
+          👌 فقط راقبي: هل كتافچ نزلت شوي؟ هل النفس صار أهدأ؟
+        </div>
+
+        <div class="arrow">⬇ التالي</div>
+      </div>
+    </section>
+
+    <!-- STEP 3: AFTER IMPROVEMENT -->
+    <section class="section">
+      <div class="card">
+        <div class="h"><span class="badge">💪 الحركة بعد التحسّن</span><span>الخطوة ٣</span></div>
+
+        <ul class="list">
+          <li><div class="mark">✔</div><div>ابتعدي خطوة صغيرة عن الجدار</div></li>
+          <li><div class="mark">⬇</div><div>ركّزي نظرة طبيعية قدّامج (نقطة أمامچ)</div></li>
+          <li><div class="mark">⬇</div><div>ارفعي الذراعين للأمام حتى مستوى الكتفين… وانزليهم ببطء</div></li>
+          <li><div class="mark">👀</div><div>وأنتِ ترفعين… ارجعي وسّعي مجال الرؤية مرة ثانية</div></li>
+        </ul>
+
+        <p class="p"><b>٥ مرات فقط</b></p>
+
+        <div class="okbox">
+          ✨ اسمحي لعينچ تلاحظ حركة اليد بدون “تفكير”… بس ملاحظة.
+        </div>
+
+        <div class="arrow">⬇ الأخير</div>
+      </div>
+    </section>
+
+    <!-- REMEMBER -->
+    <section class="section">
+      <div class="card">
+        <div class="h"><span class="badge">📌 تذكّري</span><span>جملة واحدة</span></div>
+
+        <p class="p" style="margin-top:6px;"><b>اتساع مجال الرؤية = راحة الدماغ</b></p>
+
+        <ul class="list">
+          <li><div class="mark">✔</div><div>إذا صار ألم… ابدئي بالجدار فوراً</div></li>
+          <li><div class="mark">✔</div><div>إذا نسيتي… عادي. المرة الجاية تكفي</div></li>
+          <li><div class="mark">✖</div><div>ما تحتاجين تسوينها بشكل مثالي</div></li>
+        </ul>
+
+        <div class="tiny" style="margin-top:16px;">
+          توقيع: <b>د. أوشانا يلده</b>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="hint" aria-hidden="true">
+    <span>⬇ اسحبي لتحت</span>
+    <span>📱 مناسب للسكرينشوت</span>
+  </div>
+</body>
+</html>
