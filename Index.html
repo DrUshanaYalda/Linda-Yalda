@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ليندا يلده</title>
+<style>
+:root{
+ --bg:#0b0f14;
+ --card:#121a24;
+ --text:#f2f5f7;
+ --muted:#b9c2cc;
+ --line:rgba(255,255,255,0.10);
+}
+body{
+ margin:0;
+ background:var(--bg);
+ color:var(--text);
+ font-family:system-ui,-apple-system,"Segoe UI",Arial,"Noto Kufi Arabic","Noto Naskh Arabic",sans-serif;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ min-height:100vh;
+}
+.container{
+ width:min(720px,100%);
+ padding:24px;
+}
+.card{
+ background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+ border:1px solid var(--line);
+ border-radius:22px;
+ padding:24px;
+ text-align:center;
+ box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+h1{
+ margin:0 0 10px;
+ font-size:28px;
+}
+p{
+ margin:0 0 18px;
+ font-size:18px;
+ color:var(--muted);
+ line-height:1.6;
+}
+.menu{margin-top:12px;}
+a{
+ display:block;
+ padding:16px;
+ margin:12px 0;
+ border-radius:14px;
+ border:1px solid var(--line);
+ text-decoration:none;
+ color:var(--text);
+ font-size:20px;
+ transition:0.2s;
+}
+a:hover{background:rgba(255,255,255,0.05);}
+.footer{
+ margin-top:18px;
+ font-size:14px;
+ color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="card">
+    <h1>ليندا يلده</h1>
+    <p>اختاري اللي تحتاجينه اليوم.</p>
+
+    <div class="menu">
+      <a href="back-night/">🌙 ألم الظهر — بالليل</a>
+      <!-- future -->
+      <!-- <a href="sleep/">🛏 النوم</a> -->
+      <!-- <a href="stress/">🌿 تهدئة الجسم</a> -->
+    </div>
+
+    <div class="footer">د. أوشانا يلده</div>
+  </div>
+</div>
+</body>
+</html>
